@@ -1,13 +1,18 @@
 # my.gaming.platfor
-### initially u will got a snake head
+## GOAL
+collect the food of orange fruit with snake head
 
+## controls
+use left arrow to move left side 
+use right arrow to move right side 
+use up arrow to move up side 
+use down arrow to move down side 
 
-### collect the food of orange fruit
+## GAME OVER
+if the snake head touches the boundries or collision with the snake body the game is over
+
 ## screenshots
+
+## orange fruit
 ![Title screen](https://github.com/Vidyasagar5566/my.gaming.platform/blob/main/orange-juice.png)
 
-
-
-### if the snake head touched with boundries or touchus whith the body the the snake die....
-
-game is over
