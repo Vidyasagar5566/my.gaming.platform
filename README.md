@@ -23,3 +23,4 @@ if the snake head touches the boundries or collision with the snake body the gam
 ## gaming
 
 ![Title screen](https://github.com/Vidyasagar5566/my.gaming.platform/blob/main/Screenshot%20(490).png)
+
