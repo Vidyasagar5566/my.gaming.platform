@@ -19,3 +19,7 @@ if the snake head touches the boundries or collision with the snake body the gam
 ##  snake head
 
 ![Title screen](https://github.com/Vidyasagar5566/my.gaming.platform/blob/main/python%20(1).png)
+
+## gaming
+
+![Title screen](https://github.com/Vidyasagar5566/my.gaming.platform/blob/main/Screenshot%20(490).png)
