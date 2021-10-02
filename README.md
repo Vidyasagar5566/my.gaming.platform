@@ -1,4 +1,4 @@
-# my.gaming.platfor
+# my.snake gaming.platfor
 ## GOAL
 collect the food of orange fruit with snake head
 
