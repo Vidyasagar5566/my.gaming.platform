@@ -3,7 +3,7 @@
 
 
 ### collect the food of orange fruit
-
+https://github.com/Vidyasagar5566/my.gaming.platform/blob/main/orange-juice.png
 
 
 
