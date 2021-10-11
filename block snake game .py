@@ -6,8 +6,11 @@ import random
 screen = pygame.display.set_mode((800,600))
 pygame.display.set_caption("snake game")
 
+back_ground = pygame.image.load("snake background.jpg")
+
 # snake block
-sImg = pygame.image.load("square.png")
+sImg = pygame.image.load("tennis-ball.png")
+head_img = pygame.image.load("python (1).png")
 sx = []
 sy = []
 no_block = 1
@@ -21,7 +24,7 @@ def snake(x, y):
 
 # food
 def food(x, y):
-    ll = pygame.image.load("square.png")
+    ll = pygame.image.load("orange-juice.png")
     screen.blit(ll, (x, y))
 
 # random food
@@ -50,7 +53,11 @@ running = True
 collision = 0
 fx, fy = random.randint(3, 30)*24, random.randint(3, 20)*24
 while running:
-    screen.fill((2, 255, 2))
+    screen.fill((255, 255, 255))
+
+    # back ground
+    screen.blit(back_ground, (-1000, -1000))
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
                 running = False
@@ -90,12 +97,13 @@ while running:
         sy[0] += 24
         if snake_collision():
             stop = 1
+    # fawarding the sanake body
 
     for i in range(no_block-1, 0, -1):
         sx[i] = sx[i-1]
         sy[i] = sy[i-1]
 
-    for i in range(no_block):
+    for i in range(1, no_block):
         if stop == 1:
             text(350, 250)
             continue
@@ -108,6 +116,9 @@ while running:
         no_block += 1
         sx.append(sx[no_block-2])
         sy.append([sy[no_block-2]])
+
+        # food display and checking
+
         fx, fy = random_food()
         for i in range(1, no_block):
             if fx == sx[i] and fy == sy[i]:
@@ -122,8 +133,12 @@ while running:
         text(0, 0)
         # food
         food(fx, fy)
+
+    # snake head
+    screen.blit(head_img, (sx[0] - 5, sy[0] + 2))
     time.sleep(0.13)
     pygame.display.update()
+
 
 
 
